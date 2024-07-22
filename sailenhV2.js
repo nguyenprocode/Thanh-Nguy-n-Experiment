@@ -21,7 +21,7 @@ module.exports.run = async ({ api, event }) => {
 
   const currentTime = moment.tz("Asia/Ho_Chi_Minh").format("HH:mm:ss || D/MM/YYYY");
 
-  const tnguyen = require('./../../img/videogai.json');
+  const tnguyen = require('./../../Data_BTN/datajson/videogai.json');
   const videoCount = tnguyen.length; // Tổng số video
   const videoPath = __dirname + `/video.mp4`;
 
