@@ -21,7 +21,7 @@ module.exports.run = async ({ api, event }) => {
 
   const currentTime = moment.tz("Asia/Ho_Chi_Minh").format("HH:mm:ss || D/MM/YYYY");
 
-  const tnguyen = require('./../../img/videogai.json');
+  const tnguyen = require('./../../Data_BTN/datajson/videogai.json');
   const image = tnguyen[Math.floor(Math.random() * tnguyen.length)].trim();
 
   function downloadImage(imageUrl, outputPath, callback) {
